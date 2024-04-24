@@ -1,0 +1,44 @@
+.header{
+    background-color: rgba(255, 166, 0, 0.414);
+}
+
+
+.headerlogo{
+    height: 5vh;
+    display: inline;
+    width: 45vw;
+
+}
+
+.headermenu {
+    height: 10vh;
+    display: block;
+    width: 45vw;
+    padding-top: 2vh ;
+}
+
+.headermenu a {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-decoration: none;
+}
+
+
+.main{
+
+    background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../imgs/concierto.jpg);
+    height: 90vh; /*vh altura relativa*/
+    width: 100vw; /*vw ancho relativo*/
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+
+
+.titulo_main {
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    font-size: 2rem;
+}
