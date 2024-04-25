@@ -1,32 +1,112 @@
-.header{
-    background-color: rgba(255, 166, 0, 0.414);
+* {/* Reset */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    padding: 0;  
+    margin: 0;
+}
+:root {
+    /*defino la variable*/
+   --violeta-primario: #270089; 
+   --texto-secundario: #B4A2E0;
+    
 }
 
+/* fonts */
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+/* Estilos header */
+.header{
+    /* background-color: rgba(255, 166, 0, 0.414); */
+    background-color: var(--violeta-primario);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-size: 1em;/*2em => 2 * 16px = 32px;*/
+    color: white;
+}
 
 .headerlogo{
-    height: 5vh;
-    display: inline;
-    width: 45vw;
-
+    height: 10vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
 }
 
 .headermenu {
     height: 10vh;
-    display: block;
-    width: 45vw;
-    padding-top: 2vh ;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* padding-top: 2vh ; */
+    padding-right: 5vw;
 }
 
 .headermenu a {
     padding-left: 2vw;
     padding-right: 2vw;
     text-decoration: none;
+    color: white;
 }
 
 
 .main{
-
-    background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../imgs/concierto.jpg);
+    background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../imgs/bg-main.jpg);
     height: 90vh; /*vh altura relativa*/
     width: 100vw; /*vw ancho relativo*/
     background-size: cover;
@@ -35,10 +115,19 @@
     color: white;
 }
 
-
-
 .titulo_main {
     padding-top: 20vh;
-    padding-bottom: 5vh;
-    font-size: 2rem;
+    padding-bottom: 10vh;
+    font-size: 3rem;
+}
+
+.filtro_container{
+    width: 60vw;
+    height: 5vh;
+    background-color: white;
+    margin:5vh auto;
+    border-radius: 50px;
+    border-color: var(--violeta-secundario);
+    border: 2px;
+    display: flex;
 }
