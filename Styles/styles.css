@@ -163,3 +163,27 @@
     border: 2px;
     display: flex;
 }
+/* seccion con cards */
+.subtitulo{
+  color: var(--violeta-primario);
+  font-size: 3rem;
+}
+.section_conciertos{
+  width: 100vw;
+  height: 100%;
+}
+.contenedor_conciertos{
+  display: flex;
+}
+.concierto_card{
+  height: 360px;
+  width: 100%;
+  border-color: black;
+  background-color: #B4A2E0;
+}
+/* footer */
+.footer_container{
+  height: 25vh;
+  width: 100vw;
+  background-color: var(--violeta-primario);
+}
