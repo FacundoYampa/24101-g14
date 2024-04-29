@@ -1,5 +1,5 @@
 * {/* Reset */
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal; 
     padding: 0;  
@@ -7,65 +7,121 @@
 }
 :root {
     /*defino la variable*/
-   --violeta-primario: #270089; 
+   --violeta-primario: #4608ad; 
    --texto-secundario: #B4A2E0;
+   --bg-oscuro:#121212;
     
 }
 
 /* fonts */
-.roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
   
 
 /* Estilos header */
@@ -73,6 +129,7 @@
     /* background-color: rgba(255, 166, 0, 0.414); */
     background-color: var(--violeta-primario);
     height: 10vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     font-size: 1em;/*2em => 2 * 16px = 32px;*/
@@ -84,7 +141,7 @@
     width: 30vw;
     display: flex;
     align-items: center;
-    padding-left: 5vw;
+    padding-left: 2vw;
 }
 
 .headermenu {
@@ -94,12 +151,12 @@
     align-items: center;
     justify-content: flex-end;
     /* padding-top: 2vh ; */
-    padding-right: 5vw;
+    padding-right: 1vw;
 }
 
 .headermenu a {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     text-decoration: none;
     color: white;
 }
@@ -150,23 +207,30 @@
 .titulo_main {
     padding-top: 20vh;
     padding-bottom: 10vh;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .filtro_container{
     width: 60vw;
-    height: 5vh;
+    height: 8vh;
     background-color: white;
+    padding: 1vh;
     margin:5vh auto;
     border-radius: 50px;
     border-color: var(--violeta-secundario);
     border: 2px;
     display: flex;
+    align-items: center;
+}
+.form_filtro{
+  padding-left: 2vw;
+  width: 100%;
+  display: flex;
 }
 /* seccion con cards */
 .subtitulo{
   color: var(--violeta-primario);
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .section_conciertos{
   width: 100vw;
@@ -183,7 +247,24 @@
 }
 /* footer */
 .footer_container{
-  height: 25vh;
+  height: 40vh;
   width: 100vw;
-  background-color: var(--violeta-primario);
+  background-color: var(--bg-oscuro);
+}
+
+/* inputs y btns */
+.input{
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48; /*size*/
+  color: #4608ad;
+
 }
