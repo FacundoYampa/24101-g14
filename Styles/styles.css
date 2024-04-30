@@ -127,13 +127,14 @@
 /* Estilos header */
 .header{
     /* background-color: rgba(255, 166, 0, 0.414); */
-    background-color: var(--violeta-primario);
+    background-color: transparent;
     height: 10vh;
     width: 100vw;
     display: flex;
     align-items: center;
     font-size: 1em;/*2em => 2 * 16px = 32px;*/
     color: white;
+    position: absolute;
 }
 
 .headerlogo{
@@ -164,7 +165,7 @@
 
 .main{
     background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../imgs/bg-main.jpg);
-    height: 90vh; /*vh altura relativa*/
+    height: 100vh; /*vh altura relativa*/
     width: 100vw; /*vw ancho relativo*/
     background-size: cover;
     background-position: center;
@@ -231,6 +232,7 @@
 .subtitulo{
   color: var(--violeta-primario);
   font-size: 2rem;
+  font-weight: 700;
 }
 .section_conciertos{
   width: 100vw;
@@ -267,4 +269,65 @@
   'opsz' 48; /*size*/
   color: #4608ad;
 
+}
+
+.cont_cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  width: 190px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
 }
