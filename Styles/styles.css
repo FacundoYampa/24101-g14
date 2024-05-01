@@ -171,6 +171,7 @@
     background-position: center;
     text-align: center;
     color: white;
+    padding-top: 10vh;
 }
 
 .mainpreguntas{
@@ -241,18 +242,13 @@
 .contenedor_conciertos{
   display: flex;
 }
-.concierto_card{
+/* .concierto_card{
   height: 360px;
   width: 100%;
   border-color: black;
   background-color: #B4A2E0;
-}
-/* footer */
-.footer_container{
-  height: 40vh;
-  width: 100vw;
-  background-color: var(--bg-oscuro);
-}
+} */
+
 
 /* inputs y btns */
 .input{
@@ -330,4 +326,11 @@
 
 .name:hover {
   cursor: pointer;
+}
+
+/* footer */
+.footer_container{
+  height: 40vh;
+  width: 100vw;
+  background-color: var(--bg-oscuro);
 }
