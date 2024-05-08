@@ -168,6 +168,7 @@
     height: 100vh; /*vh altura relativa*/
     width: 100vw; /*vw ancho relativo*/
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     color: white;
@@ -177,8 +178,9 @@
 .mainpreguntas{
   background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../imgs/bg-main.jpg);
   height: 40vh; /*vh altura relativa*/
-  width: 100vw; /*vw ancho relativo*/
+  width: auto; /*vw ancho relativo*/
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   color: white;
@@ -186,9 +188,10 @@
 
 .mainpregunta1{
   background-color:#0000008a;
- /*  height: 100vh; 
+  height: 100vh;
   width: 100vw; /*vw ancho relativo*/
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   color: white;
 }
@@ -333,4 +336,30 @@
   height: 40vh;
   width: 100vw;
   background-color: var(--bg-oscuro);
+  color: #4608ad;
+  text-align: center;
+  padding: 16px;
+}
+
+/* footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+ */
+
+footer ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: whitesmoke;
+  text-decoration: none;
 }
