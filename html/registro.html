@@ -19,7 +19,6 @@
 
 <header class="header">
     <div class="headerlogo">      
-       <!-- <img src="./favicon_io/favicon.ico"> -->
        <span class="material-symbols-outlined mx-2" style="color:white">
         graphic_eq
         </span>
@@ -39,32 +38,32 @@
 <main>
     <section class="main">
         <div class="cont_form_registro">
-            <form action="https://facundoyampa.github.io/24101-g14/" method="post">
+            <form id="form_registro">
                 <div class="form_registro px-5">
-                    <h2 class="py-4 subtitulo">Registrate</h2>
+                    <h2 class="py-4">Registrate</h2>
                     
                     <div class="input_grupo my-3">
-                        <label for="nombre">Nombre</label>
-                        <input class="input_form" type="text">
+                        <!-- <label for="nombre">Nombre</label> -->
+                        <input class="input" type="text" id="nombre" placeholder="Nombre">
                     </div>
                     <div class="input_grupo my-3">
-                        <label for="email">Email</label>
-                        <input class="input_form" type="email" name="email" id="email">
+                        <!-- <label for="email">Email</label> -->
+                        <input class="input" type="email" name="email" id="email" placeholder="Email">
                     </div>
                     <div class="input_grupo my-3">
-                        <label for="contra">Contraseña</label>
-                        <input class="input_form" type="password" name="contra" id="contra">
+                        <!-- <label for="contra">Contraseña</label> -->
+                        <input class="input" type="password" name="contra" id="contraseña" placeholder="Contraseña">
                     </div>
                     
 
                     <div class="input_grupo my-3">
-                        <label for="confirmar_contra">Confirmar contraseña</label>
-                        <input class="input_form" type="password" name="confirmar_contra" id="">
+                        <!-- <label for="confirmar_contra">Confirmar contraseña</label> -->
+                        <input class="input" type="password" name="confirmar_contraseña" id="confirmar_contraseña" placeholder="Confirmar contraseña">
                     </div>
 
-                    <button class="my-3">Registrarse</button>
+                    <button type="submit" id="btn_registrar" class="my-3 button_form">Registrarse</button>
                     <div class="input_grupo my-3">
-                        <span>¿Ya tienes una cuenta?<a href="">Inicia Sesion</a></span>
+                        <span class="px-2">¿Ya tienes una cuenta?<a href="" class="px-2">Inicia Sesion</a></span>
                     </div>
                     
                 </div>
@@ -84,7 +83,8 @@
     </div>
 </footer>
 
-<script src="./js/index.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/validaciones.js"></script>
 </body>
 
 </html>
