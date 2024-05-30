@@ -199,6 +199,7 @@
 .h2{
   text-align: center;
   text-decoration: underline;
+  margin-bottom: 20px;
 }
 
 .h3{
@@ -227,6 +228,12 @@
     display: flex;
     align-items: center;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form_filtro{
   padding-left: 2vw;
   width: 100%;
@@ -254,10 +261,50 @@
 
 
 /* inputs y btns */
-.input{
-  width: 100%;
+input {
+  padding: 7px;
+  border: 3px solid #4608ad;
+  border-radius: 40px;
+  font-size: 16px;
+  width: 300px;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+button{
+  padding: 20px;
   border: none;
-  background-color: transparent;
+  border-radius: 100px;
+  font-size: 16px;
+  width: 300px;
+  background-color: #4608ad;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* .input {
+  width: 100%;
+  border: 3px solid #4608ad;
+  background-color: whitesmoke;
+} */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 10px auto;
+  background-color: #000 
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .material-symbols-outlined {
@@ -363,3 +410,66 @@ footer ul li a {
   color: whitesmoke;
   text-decoration: none;
 }
+
+
+<!DOCTYPE html> <html lang="en"> 
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Iniciar Sesión</title> 
+<style> 
+body { 
+  font-family: Arial, sans-serif; 
+  background-color: #f0f0f0; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; } 
+
+.form-container { 
+  background-color: #fff; 
+  padding: 20px; 
+  border-radius: 5px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  width: 300px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; } 
+
+input { 
+  padding: 8px; 
+  margin: 5px 0; 
+  width: 100%; 
+  box-sizing: border-box; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; } 
+
+button { 
+  padding: 8px; 
+  margin: 10px 0; 
+  width: 100%; 
+  background-color: #007bff; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; }
+
+button:hover { 
+    background-color: #0056b3; } 
+
+.register-link { 
+  margin-top: 10px; } 
+  
+  
+  </style> 
+  </head> 
+  <body> 
+  <div class="form-container"> 
+  <h2>Iniciar Sesión</h2> 
+  <form> <input type="email" placeholder="Email" required> 
+  <input type="password" placeholder="Contraseña" required> 
+  <button type="submit">Iniciar Sesión</button> 
+  </form> <p class="register-link">¿Aún no tienes una cuenta? <a href="#">Regístrate</a></p> 
+  </div> 
+  </body> 
+  </html>
