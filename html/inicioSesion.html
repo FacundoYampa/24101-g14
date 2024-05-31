@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/login.css">
     <link rel="shortcut icon" href="../imgs/graphic_eq_FILL0_wght400_GRAD0_opsz24.svg" type="svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,23 +36,26 @@
             <a href="../html/ubicacion.html">Dónde encontrarnos</a>
         </div>
 
-
     </header>
 
     <main>
         <section class="main">
-            <div class="login-container">
-                
-            <h2 class="titulo_main texto roboto-bold">Iniciar Sesión</h2>
-            <form action="procesar_login.html" method="post">
-                <input placeholder="Email" type="email" id="email" name="email" required><br><br>
+            <div class="container">
+                <div class="login-box">
 
-                <input placeholder="Contraseña" type="password" id="password" name="password" required><br><br>
-
-                <button type="submit" value="Iniciar Sesión">Iniciar Sesión</button>
-            </form>
-            <a href="registro.html">Regístrarse</a>
-        </div>
+                    <h1>Iniciar Sesión</h1>
+                    <form action="procesar_login.html" method="post">
+                        <div class="textbox">
+                            <input type="email" placeholder="Email" name="email" id="email" required>
+                        </div>
+                        <div class="textbox">
+                            <input type="password" placeholder="Contraseña" name="password" id="password" required>
+                        </div>
+                        <button type="submit">Iniciar Sesión</button>
+                        <a href="../html/registro1.html" class="register-link">Registrarse</a>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -64,7 +67,6 @@
         </ul>
     </footer>
 
-    <script src="./js/index.js"></script>
 </body>
 
 </html>
