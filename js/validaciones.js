@@ -49,7 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert("Las costraseñas deben ser iguales");
             }
 
-        if (isValid) {
+        if (valido) {
+            alert("Se registró correctamente")
             form.submit();  // Si todos los campos son válidos, envía el formulario
         }
     });
