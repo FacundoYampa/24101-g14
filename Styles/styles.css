@@ -253,11 +253,24 @@
 } */
 
 
-/* inputs y btns */
+/* inputs y butttons */
 .input{
   width: 100%;
+  height: 2rem;
   border: none;
-  background-color: transparent;
+  border-radius: 50px;
+  background-color: white;
+  padding: 0 1rem;
+  outline: none;
+}
+
+.button_form{
+  background-color: var(--violeta-primario);
+  color: white;
+  height: 2rem;
+  width: 50%;
+  border: none;
+  border-radius: 50px;
 }
 
 .material-symbols-outlined {

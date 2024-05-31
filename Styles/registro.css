@@ -1,0 +1,22 @@
+.cont_form_registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form_registro{
+    height: 700px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 8rem;
+}
+.input_grupo{
+    height: 3rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
