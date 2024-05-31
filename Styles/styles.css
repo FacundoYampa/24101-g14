@@ -123,7 +123,6 @@
 }
 
   
-
 /* Estilos header */
 .header{
     /* background-color: rgba(255, 166, 0, 0.414); */
@@ -195,6 +194,7 @@
 .h2{
   text-align: center;
   text-decoration: underline;
+  margin-bottom: 20px;
 }
 
 .h3{
@@ -223,21 +223,30 @@
     display: flex;
     align-items: center;
 }
+
+/* form {
+  display: flex;
+  flex-direction: column;
+} */
+
 .form_filtro{
   padding-left: 2vw;
   width: 100%;
   display: flex;
 }
+
 /* seccion con cards */
 .subtitulo{
   color: var(--violeta-primario);
   font-size: 2rem;
   font-weight: 700;
 }
+
 .section_conciertos{
   width: 100vw;
   height: 100%;
 }
+
 .contenedor_conciertos{
   display: flex;
 }
@@ -250,6 +259,19 @@
 
 
 /* inputs y butttons */
+input {
+  padding: 7px;
+  border: 3px solid #4608ad;
+  border-radius: 40px;
+  font-size: 16px;
+  width: 300px;
+}
+
+/* input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+} */
+
 .input{
   width: 100%;
   height: 2rem;
@@ -265,8 +287,112 @@
   color: white;
   height: 2rem;
   width: 50%;
+  height: 2rem;
+  border: none;
+  border-radius: 40px;
+  background-color: white;
+  padding: 0 1rem;
+  outline: none;
+}
+
+button {
+  padding: 20px;
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
+  width: 300px;
+  background-color: #4608ad;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #d40813;
+}
+
+.button_form{
+  background-color: var(--violeta-primario);
+  color: white;
+  height: 2rem;
+  width: 50%;
   border: none;
   border-radius: 50px;
+}
+
+.register-link {
+  display: block;
+  margin-top: 20px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.register-link:hover {
+  color: #fff;
+}
+
+/* .input {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  padding: 0 1rem;
+  outline: none;
+} */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-box {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(196, 192, 192, 0.5);
+  text-align: center;
+  width: 400px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.textbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.textbox input {
+  padding: 7px;
+  border: 3px solid #4608ad;
+  border-radius: 40px;
+  font-size: 16px;
+  width: 300px;
+  
+  background: none;
+  /*border-bottom: 2px solid #fff;*/
+  outline: none;
+}
+
+.textbox input::placeholder {
+  color: rgba(245, 245, 245, 0.45);
+}
+
+.textbox input:hover {
+  border-color: #d40813;
+}
+
+.textbox input:focus {
+  border-color: #aaa;
 }
 
 .material-symbols-outlined {

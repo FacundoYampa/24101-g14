@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../Styles/login.css">
     <link rel="shortcut icon" href="../imgs/graphic_eq_FILL0_wght400_GRAD0_opsz24.svg" type="svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +16,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>TicketMAS - Dónde encontrarnos</title>
+    <title>TicketMAS - Inicio de Sesión</title>
 </head>
 
 <body>
-
     <header class="header">
         <div class="headerlogo">
             <!-- <img src="./favicon_io/favicon.ico"> -->
@@ -31,36 +31,32 @@
 
         <div class="headermenu">
             <a href="../index.html">HOME</a>
-            <a href="../html/ventadeentradas.html">Venta de entradas</a>
+            <a href="../html/ventadeentradas.html">Venta de Entradas</a>
             <a href="../html/preguntas.html">Preguntas Frecuentes</a>
-            <a href="../html/login.html">Iniciar Sesión</a>
+            <a href="../html/ubicacion.html">Dónde encontrarnos</a>
         </div>
-
 
     </header>
 
-
     <main>
-        <section class="mainpreguntas">
-            <div>
-                <h1 class="titulo_main texto roboto-bold">
-                    Dónde Encontrarnos
-                </h1>
+        <section class="main">
+            <div class="container">
+                <div class="login-box">
+
+                    <h1>Iniciar Sesión</h1>
+                    <form action="procesar_login.html" method="post">
+                        <div class="textbox">
+                            <input type="email" placeholder="Email" name="email" id="email" required>
+                        </div>
+                        <div class="textbox">
+                            <input type="password" placeholder="Contraseña" name="password" id="password" required>
+                        </div>
+                        <button type="submit">Iniciar Sesión</button>
+                        <a href="../html/registro1.html" class="register-link">Registrarse</a>
+                    </form>
+                </div>
+            </div>
         </section>
-
-        <section class="mainpregunta1">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0253582625573!2d-58.3771993242598!3d-34.603520272954306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd075f1ca7%3A0x28ec5d600c954aa3!2sAv.%20Corrientes%20560%2C%20C1043AAS%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714276087475!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-
-        </section>
-
-        </div>
-
-
     </main>
 
     <footer class="footer_container">
@@ -70,8 +66,6 @@
             <li><a href="https://www.instagram.com/TicketMAS" target="_blank">Instagram</a></li>
         </ul>
     </footer>
-
-    <script src="./js/index.js"></script>
 
 </body>
 
