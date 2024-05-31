@@ -128,8 +128,6 @@
 .header{
     /* background-color: rgba(255, 166, 0, 0.414); */
     background-color: transparent;
-    height: 10vh;
-    width: 100vw;
     display: flex;
     align-items: center;
     font-size: 1em;/*2em => 2 * 16px = 32px;*/
@@ -165,8 +163,6 @@
 
 .main{
     background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../imgs/bg-main.jpg);
-    height: 100vh; /*vh altura relativa*/
-    width: 100vw; /*vw ancho relativo*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -346,8 +342,6 @@
 
 /* footer */
 .footer_container{
-  height: 40vh;
-  width: 100vw;
   background-color: var(--bg-oscuro);
   color: #4608ad;
   text-align: center;

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // const toastLiveExample = document.getElementById('liveToast');
             // const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
             // toastBootstrap.show();
-            alert("Debes completar todos los campos");
+            mostrarToast(errorVacio);
         }
 
             else if (!soloTextoRegex.test(nombre) || nombre.length > 51) {
@@ -41,12 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 // const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
                 // toastBootstrap.show(); 
                 //podria usar una funcion y cambiar parametros
-                alert("Debe completar con un email con formato válido");
+                mostrarToast(errorEmail);
             }
 
             else if (password != confirm_password) {
                 valido = false;
-                alert("Las costraseñas deben ser iguales");
+                mostrarToast(errorPasswords)
             }
 
         if (valido) {
@@ -55,3 +55,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Defino los mensajes de error en variables
+    var errorEmail = "Debe completar con un email válido";
+    var errorVacio = "Debe completar todos los campos";
+    var errorPasswords = "Las contrseñas deben coincidir";
+
+
+function mostrarToast(error){
+
+    const textoToast = document.getElementById('toast-texto');
+    textoToast.innerText = error; //cambio el mensaje del toast segun el error (parámetro)
+
+    const toastLiveExample = document.getElementById('liveToast');
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+    toastBootstrap.show();
+}
+
