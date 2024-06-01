@@ -11,9 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const passwordLogin = document.getElementById('contraseña_login').value;
 
         //Variables con expresiones regulares p/ validaciones
-        const emailRegexLogin = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  //regex para email en una variable
+        const emailRegexLogin = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const passwordRegexLogin = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/;
 
-        let validoInicio = true;
+        let validoInicio = true;    
 
         //Validaciones front
         if (emailLogin == "" || passwordLogin=="") {
@@ -25,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 validoInicio = false;
                 mostrarToast(errorEmail);
+            }
+            else if(!passwordRegexLogin.test(passwordLogin)){
+                validoInicio = false;
+                mostrarToast(errorPasswordLogin);
             }
 
         if (validoInicio) {
@@ -39,6 +44,7 @@ var errorEmail = "Debe completar con un email válido";
 var errorVacio = "Debe completar todos los campos";
 var errorPasswords = "Las contrseñas deben coincidir";
 var msjExitoLogin = "Inició sesión correctamente";
+var errorPasswordLogin = "La contraseña debe tener: Al menos 8 caracteres, 1 digito, 1 mayucuscula, 1 minuscula y 1 carácter especial";
 
 function mostrarToast(error){
 

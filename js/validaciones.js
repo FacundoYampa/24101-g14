@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //Variables con expresiones regulares p/ validaciones
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  //regex para email en una variable
         const soloTextoRegex = /^[a-zA-Z\s]+$/;           //regex para que entre solo texto
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/; //regex p/ formato password
 
         let valido = true;
 
@@ -36,6 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 mostrarToast(errorEmail);
             }
 
+            else if(!passwordRegex.test(password)){
+                valido = false;
+                mostrarToast(errorPassword);
+            }
+
             else if (password != confirm_password) {
                 valido = false;
                 mostrarToast(errorPasswords);
@@ -54,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var errorPasswords = "Las contrseñas deben coincidir";
     var errorNombre = "El nombre solo debe contener letras";
     var msjExito = "Se registró correctamente";
+    var errorPassword = "La contraseña debe tener: Al menos 8 caracteres, 1 digito, 1 mayucuscula, 1 minuscula y 1 carácter especial";
 
 
 function mostrarToast(error){
