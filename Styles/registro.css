@@ -1,0 +1,31 @@
+.cont_form_registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form_registro{
+    background-color: #121212ee;
+    border-radius: 10px;
+    padding: 3rem;
+}
+.input_grupo{
+    height: 3rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toast_container{
+    height: 32px;
+    width: 320px;
+    background-color: black;
+    background: black;
+    position: absolute;
+    border-radius: 10px;
+    color: white;
+    left: 200px;
+}
