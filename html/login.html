@@ -44,7 +44,7 @@
                 <div class="login-box">
 
                     <h1>Iniciar Sesión</h1>
-                    <form action="procesar_login.html" method="post">
+                    <form action="validarlogin.js" method="post" onsubmit="return validarFormulario()">
                         <div class="textbox">
                             <input type="email" placeholder="Email" name="email" id="email" required>
                         </div>
@@ -59,6 +59,7 @@
         </section>
     </main>
 
+
     <footer class="footer_container">
         <ul>
             <li><a href="https://twitter.com/TicketMAS" target="_blank">Twitter</a></li>
@@ -67,7 +68,7 @@
         </ul>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/validarlogin.js"></script>
 </body>
 
 </html>
