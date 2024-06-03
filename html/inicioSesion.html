@@ -4,69 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../Styles/login.css">
     <link rel="shortcut icon" href="../imgs/graphic_eq_FILL0_wght400_GRAD0_opsz24.svg" type="svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Inicia Sesión - TicketMAS</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/registro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>TicketMAS - Inicio de Sesión</title>
 </head>
 
 <body>
-    <header class="header">
+
+    <header class="header container-fluid">
         <div class="headerlogo">
-            <!-- <img src="./favicon_io/favicon.ico"> -->
             <span class="material-symbols-outlined mx-2" style="color:white">
                 graphic_eq
             </span>
             TicketMAS
         </div>
+        <!-- 
+    <div class="headermenu">
+        <a href="./html/ventadeentradas.html">Venta de entradas</a>
+        <a href="./html/preguntas.html">Preguntas frecuentes</a>
+        <a href="./html/ubicacion.html">Dónde encontrarnos</a>
+    </div> -->
 
-        <div class="headermenu">
-            <a href="../index.html">HOME</a>
-            <a href="../html/ventadeentradas.html">Venta de Entradas</a>
-            <a href="../html/preguntas.html">Preguntas Frecuentes</a>
-            <a href="../html/ubicacion.html">Dónde encontrarnos</a>
-        </div>
 
     </header>
 
-    <main>
-        <section class="main">
-            <div class="container">
-                <div class="login-box">
 
-                    <h1>Iniciar Sesión</h1>
-                    <form action="procesar_login.html" method="post">
-                        <div class="textbox">
-                            <input type="email" placeholder="Email" name="email" id="email" required>
-                        </div>
-                        <div class="textbox">
-                            <input type="password" placeholder="Contraseña" name="password" id="password" required>
-                        </div>
-                        <button type="submit">Iniciar Sesión</button>
-                        <a href="../html/registro1.html" class="register-link">Registrarse</a>
-                    </form>
-                </div>
+    <main>
+        <section class="main container-fluid pb-5">
+            <div class="cont_form_registro py-3">
+                <form id="form_login" class="form_registro" action="../index.html">
+
+                    <h2 class="py-2">Inicia Sesión</h2>
+
+                    <div class="input_grupo my-4">
+                        <label for="email" class="my-1">Email</label>
+                        <input class="input" type="text" name="email" id="email_login" placeholder="Email"
+                            autocomplete="none">
+                    </div>
+                    <div class="input_grupo my-4">
+                        <label for="contraseña" class="my-1">Contraseña</label>
+                        <input class="input" type="password" name="contraseña" id="contraseña_login" placeholder="Contraseña">
+                    </div>
+
+                    <button type="submit" id="btn_registrar" class="my-3 button_form">Inicia Sesión</button>
+                    <div class="input_grupo">
+                        <span class="px-2">¿No tienes una cuenta?<a href="./registro.html" class="px-2">Registrate</a></span>
+                    </div>
+                </form>
             </div>
         </section>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex text-bg-danger">
+                    <div id="toast-texto" class="toast-body">
+                      Debes completar todos los campos.
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
     </main>
-
-    <footer class="footer_container">
-        <ul>
-            <li><a href="https://twitter.com/TicketMAS" target="_blank">Twitter</a></li>
-            <li><a href="https://www.facebook.com/TicketMAS" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/TicketMAS" target="_blank">Instagram</a></li>
-        </ul>
+    <footer class="footer_container container-fluid">
+        <div class="">
+            <ul>
+                <li><a href="enlace-a-facebook">Facebook</a></li>
+                <li><a href="enlace-a-twitter">Twitter</a></li>
+                <li><a href="enlace-a-instagram">Instagram</a></li>
+            </ul>
     </footer>
-
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+    <!-- <script src="/js/validaciones.js"></script> -->
 </body>
 
 </html>

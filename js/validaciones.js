@@ -16,41 +16,39 @@ document.addEventListener('DOMContentLoaded', () => {
         //Variables con expresiones regulares p/ validaciones
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  //regex para email en una variable
         const soloTextoRegex = /^[a-zA-Z\s]+$/;           //regex para que entre solo texto
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/; //regex p/ formato password
 
         let valido = true;
 
         //Validaciones front
         if (nombre == "" || email == "" || password == "" || confirm_password == "") {
-
             valido = false;
-            // const toastLiveExample = document.getElementById('liveToast');
-            // const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
-            // toastBootstrap.show();
             mostrarToast(errorVacio);
         }
 
             else if (!soloTextoRegex.test(nombre) || nombre.length > 51) {
                 valido = false;
-                alert("el nombre debe contener solo letras");
+                mostrarToast(errorNombre);
             }
 
             else if (!emailRegex.test(email))//metodo para validar la expresion regular
             {
                 valido = false;
-                // const toastLiveExample = document.getElementById('liveToastMail');
-                // const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
-                // toastBootstrap.show(); 
-                //podria usar una funcion y cambiar parametros
                 mostrarToast(errorEmail);
+            }
+
+            else if(!passwordRegex.test(password)){
+                valido = false;
+                mostrarToast(errorPassword);
             }
 
             else if (password != confirm_password) {
                 valido = false;
-                mostrarToast(errorPasswords)
+                mostrarToast(errorPasswords);
             }
 
         if (valido) {
-            alert("Se registró correctamente")
+            mostrarToast(msjExito);
             form.submit();  // Si todos los campos son válidos, envía el formulario
         }
     });
@@ -60,6 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
     var errorEmail = "Debe completar con un email válido";
     var errorVacio = "Debe completar todos los campos";
     var errorPasswords = "Las contrseñas deben coincidir";
+    var errorNombre = "El nombre solo debe contener letras";
+    var msjExito = "Se registró correctamente";
+    var errorPassword = "La contraseña debe tener: Al menos 8 caracteres, 1 digito, 1 mayucuscula, 1 minuscula y 1 carácter especial";
 
 
 function mostrarToast(error){
