@@ -191,6 +191,19 @@
   color: white;
 }
 
+.textpregfrec{
+  text-align: justify;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.titpregfrec{
+text-decoration: underline; 
+ 
+}
+
+
+/*
 .h2{
   text-align: center;
   text-decoration: underline;
@@ -198,15 +211,17 @@
 }
 
 .h3{
-  text-align: left;
+  text-align: justify;
 }
 
 .h4{
   text-align: justify;
 }
+*/
+
 
 .titulo_main {
-    padding-top: 20vh;
+    padding-top: 5vh;
     padding-bottom: 10vh;
     font-size: 3em;
 }
